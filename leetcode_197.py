@@ -2,13 +2,15 @@
 
 
 
-classes = [[1,2],[3,5],[2,2]]
-extraStudents = 2
-l=[]
-for i in range(len(classes)):
-    l.append(classes[i][0]/classes[i][1])
-print(l)
-d={}
-for key,val in zip(l,classes):
-    d[key]=val
-print(d)
+word1 = "ab"
+word2 = "pqr"
+
+n1=len(word1)
+n2=len(word2)
+
+n=min(n1,n2)
+s=""
+for i in range(n):
+    s+=word1[i]+word2[i]
+
+print(s + word1[n:] + word2[n:])
