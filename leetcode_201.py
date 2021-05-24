@@ -49,26 +49,28 @@
 
 
 
-def sub_lists(l,k):
-    base = []
-    lists = [base]
-    for i in range(len(l)):
-        orig = lists[:]
-        new = l[i]
-        for j in range(len(lists)):
-            lists[j] = lists[j] + [new]
-        lists = orig + lists
+# def sub_lists(l,k):
+#     base = []
+#     lists = [base]
+#     for i in range(len(l)):
+#         orig = lists[:]
+#         new = l[i]
+#         for j in range(len(lists)):
+#             lists[j] = lists[j] + [new]
+#         lists = orig + lists
+#
+#     li=lists[1:]
+#     suum = []
+#     for i in li:
+#         suum.append(sum(i) % k)
+#     a=max(suum)
+#     b=suum.count(max(suum))
+#     return a,b
+# n,k=map(int,input().split())
+# l =list(map(int,input().split()))
+# print(sub_lists(l,k))
 
-    li=lists[1:]
-    suum = []
-    for i in li:
-        suum.append(sum(i) % k)
-    a=max(suum)
-    b=suum.count(max(suum))
-    return a,b
-n,k=map(int,input().split())
-l =list(map(int,input().split()))
-print(sub_lists(l,k))
+
 
 
 
@@ -82,4 +84,22 @@ print(sub_lists(l,k))
 #
 # print(suum)
 # print(max(suum),suum.count(max(suum)))
+
+
+
+nums = [1,2,3,4,5]
+
+max_num = float("-inf")
+
+for num in nums:
+    if num>max_num:
+        max_num=num
+print(max_num)
+
+
+
+
+
+
+
 
